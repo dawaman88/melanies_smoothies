@@ -1,6 +1,7 @@
 rch_on# Import python packages
 import streamlit as st
 import requests
+import pandas
 #from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 
