@@ -32,7 +32,7 @@ st.write('name of the smoothie is ',name_order)
 ingredients_list = st.multiselect('Choose up to 5 Ingredients:',my_dataframe,max_selections=5)
 if ingredients_list:
     #st.write(ingredients_list)
-    #st.text(ingredients_list)
+    st.text(ingredients_list)
     ingredients_string = ''
 
     for fruit_choosen in ingredients_list:
