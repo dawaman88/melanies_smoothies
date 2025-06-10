@@ -1,4 +1,4 @@
-# Import python packages
+rch_on# Import python packages
 import streamlit as st
 import requests
 #from snowflake.snowpark.context import get_active_session
@@ -41,7 +41,7 @@ if ingredients_list:
       st.write('The search value for', fruit_choosen, ' is ',serach_on,'.')
       
       st.subheader(fruit_choosen + ' Nutrition Information')
-      smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/"+fruit_choosen)
+      smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/"+search_on)
       sf_df = st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
     #st.write(ingredients_string)
 
